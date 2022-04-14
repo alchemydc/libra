@@ -1,7 +1,8 @@
 #### VARIABLES ####
 SHELL=/usr/bin/env bash
 DATA_PATH = ${HOME}/.0L
-USER_BIN_PATH = ${HOME}/bin
+#USER_BIN_PATH = ${HOME}/bin
+USER_BIN_PATH = ${HOME}/.cargo/bin
 
 # Chain settings
 CHAIN_ID = 1

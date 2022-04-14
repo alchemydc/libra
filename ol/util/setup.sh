@@ -2,7 +2,7 @@
 
 # targeting ubuntu
 sudo apt update
-sudo apt install -y git tmux jq build-essential cmake clang llvm libgmp-dev pkg-config libssl-dev lld
+sudo apt install -y git tmux jq build-essential cmake clang llvm libgmp-dev pkg-config libssl-dev lld librocksdb-dev curl
 
 curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain stable -y
 PATH="$HOME/.cargo/bin:$PATH" cargo install toml-cli
@@ -17,4 +17,4 @@ To configure your current shell, run: \n\
 source $HOME/.cargo/env\
 "
 
-echo "Manually add 'export RUSTC_WRAPPER=sccache' to your bash profile ~/.bashrc"
+echo "For speedier builds, Manually add 'export RUSTC_WRAPPER=sccache' to your profile (eg ~/.bashrc or ~/.zshrc)"
